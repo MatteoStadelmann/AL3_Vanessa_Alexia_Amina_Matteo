@@ -1,0 +1,94 @@
+<!-- pages/aboutus.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxon Motors – About Us</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/aboutus.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-text">LUXON MOTORS</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#" class="active">ABOUT US</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about-container">
+      <h1>DAS TEAM VON LUXON MOTORS</h1>
+
+      <img
+        src="../images/gruppenbild.jpg"
+        alt="Gruppenbild"
+        class="about-image"
+      />
+
+      <p class="about-text">
+        Die treibende Kraft hinter Luxon Motors  
+        Bei Luxon Motors stehen nicht nur Autos im Mittelpunkt, sondern vor allem die Menschen dahinter. Unser junges, engagiertes Team vereint Leidenschaft für Performance mit dem Anspruch, jedem Kunden ein exklusives und persönliches Kauferlebnis zu bieten. Mit Fachwissen, Stilbewusstsein und einem Gespür für Innovation begleiten wir Sie vom ersten Beratungsgespräch bis zur Schlüsselübergabe.
+      </p>
+
+      <a id="mehr-erfahren" class="mehr-erfahren">MEHR ERFAHREN</a>
+
+      <p id="extra-text" class="about-text extra-text">
+        Unser Team wird von Experten aus den Bereichen Technik, Design und Kundenservice gebildet.  
+        <br /><br />
+        <strong>Technik:</strong> Unsere Ingenieure kombinieren modernste Fertigungstechnologie mit nachhaltigen Materialien, um Fahrzeuge zu entwickeln, die sowohl Leistung als auch Umweltbewusstsein in Einklang bringen.  
+        <br /><br />
+        <strong>Design:</strong> Unsere Designer achten auf feine Details und ergonomische Perfektion – jedes Bauteil geht durch strenge Qualitätskontrollen, damit Sie sich in Ihrem Luxon-Fahrzeug rundum wohlfühlen.  
+        <br /><br />
+        <strong>Kundenservice:</strong> Vom Erstkontakt bis zum After-Sales-Service ist unser Support-Team Ihre feste Anlaufstelle. Wir stehen Ihnen jederzeit mit Rat und Tat zur Seite, sei es bei Finanzierungsfragen, Wartungstermin-Vereinbarungen oder individuellen Sonderwünschen.
+      </p>
+
+      <div class="game-placeholder">
+        <img
+          src="https://via.placeholder.com/900x350.png?text=T-REX-GAME"
+          alt="T-Rex Game Platzhalter"
+          class="about-image"
+        />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-hr"></div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="../index.html">Impressum</a>
+          <a href="../index.html">Datenschutz</a>
+        </div>
+        <span class="footer-copy">&copy; Luxon Motors – All Rights Reserved</span>
+      </div>
+      <div class="footer-extra">
+        <span class="footer-disclaimer">
+          Das ist ein Schulprojekt und keine reale Website
+        </span>
+        <span class="footer-names">
+          Matteo Stadelmann, Vanessa Meier, Amina Abdelhamid, Alexia Correia
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mehr-erfahren').addEventListener('click', function () {
+      const extra = document.getElementById('extra-text');
+      if (extra.style.display === 'block') {
+        extra.style.display = 'none';
+        this.textContent = 'MEHR ERFAHREN';
+      } else {
+        extra.style.display = 'block';
+        this.textContent = 'WENIGER ANZEIGEN';
+      }
+    });
+  </script>
+</body>
+</html>
