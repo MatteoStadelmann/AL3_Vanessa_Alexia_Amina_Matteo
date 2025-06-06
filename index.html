@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luxon Motors</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
   <header>
@@ -20,7 +21,52 @@
       </ul>
     </nav>
   </header>
-  <main></main>
+
+  <main>
+    <div class="content-container">
+      <h1 class="home-title">Unser Sortiment an Luxusautos</h1>
+      <p class="home-text">
+        Bei Luxon Motors bieten wir ein handverlesenes Angebot erstklassiger Fahrzeugmarken an.
+        Ob Ferrari für puren Hochleistungsspaß, Brabus für individuelle Extravaganz, Audi für
+        zuverlässige Premium-Technik oder BMW für sportliche Eleganz – wir haben für jeden Anspruch
+        genau das Richtige im Portfolio.
+      </p>
+
+      <section class="slider-section">
+        <div class="slider-container">
+          <button class="slider-button prev-button">&larr;</button>
+          <div class="slider-wrapper">
+            <div class="slide">
+              <img src="images/brabus-g-klasse.jpg" alt="Brabus-G-Klasse">
+            </div>
+            <div class="slide">
+              <img src="images/audi-limousine.jpg" alt="Audi-Limousine">
+            </div>
+            <div class="slide">
+              <img src="images/brabus-limousine.jpg" alt="Brabus-Limousine">
+            </div>
+            <div class="slide">
+              <img src="images/ferarri-classic.jpg" alt="Ferrari-Classic">
+            </div>
+            <div class="slide">
+              <img src="images/bmw-tourer.jpg" alt="BMW-Tourer">
+            </div>
+            <div class="slide">
+              <img src="images/ferarri-sport.jpg" alt="Ferrari-Sport">
+            </div>
+          </div>
+          <button class="slider-button next-button">&rarr;</button>
+        </div>
+      </section>
+
+      <p class="home-text">
+        Egal, ob Sie nach absoluter Performance, maßgeschneiderter Individualität oder verlässlicher
+        Alltags-Performance suchen – bei Luxon Motors wird jeder Autotraum wahr. Stöbern Sie in unseren
+        Angeboten und erfahren Sie, wie wir Sie bei der Auswahl Ihres Neuwagens unterstützen können.
+      </p>
+    </div>
+  </main>
+
   <footer>
     <div class="footer-inner">
       <div class="footer-hr"></div>
@@ -37,5 +83,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="javascript/index.js"></script>
 </body>
 </html>

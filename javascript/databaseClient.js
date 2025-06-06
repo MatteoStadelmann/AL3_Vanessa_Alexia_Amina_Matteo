@@ -1,5 +1,3 @@
-// javascript/databaseClient.js
-
 const GROUP_NAME = "al3";
 const PASSWORD   = "dbxcqrajxbwbyo6x";
 const SERVER_URL = "https://ict-290.herokuapp.com/sql";

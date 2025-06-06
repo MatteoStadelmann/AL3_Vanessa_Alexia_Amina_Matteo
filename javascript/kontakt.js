@@ -1,5 +1,3 @@
-// javascript/kontakt.js
-
 window.addEventListener('DOMContentLoaded', () => {
     const form    = document.getElementById('kontakt-form');
     const spinner = document.getElementById('spinner');
@@ -44,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
           "SELECT COUNT(*) AS cnt FROM kontakt WHERE email = ?;",
           [email]
         );
-        // existsResult[1] enthält die Datenzeilen
+
         const count = existsResult[1][0].cnt;
         if (count > 0) {
           showError('email', 'Diese E-Mail wird schon verwendet.');
