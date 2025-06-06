@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentIndex < 0) currentIndex = 0;
     if (currentIndex > maxIndex) currentIndex = maxIndex;
 
-    // Jedes Mal verschieben wir um genau 1 x Container-Breite:
     const containerWidth = container.offsetWidth;
     wrapper.style.transform = `translateX(-${currentIndex * containerWidth}px)`;
 
