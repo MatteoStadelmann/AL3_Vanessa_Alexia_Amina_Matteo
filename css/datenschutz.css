@@ -1,0 +1,32 @@
+.datenschutz-container {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 4vh auto;
+    background-color: var(--color-bg-dark);
+    border-radius: 10px;
+    color: var(--color-text-light);
+  }
+  
+  .datenschutz-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .datenschutz-container h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .datenschutz-container p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .datenschutz-container p:last-child {
+    margin-bottom: 0;
+  }
+  
