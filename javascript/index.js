@@ -3,23 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = Array.from(document.querySelectorAll(".slide"));
   const prevBtn = document.querySelector(".prev-button");
   const nextBtn = document.querySelector(".next-button");
+  const container = document.querySelector(".slider-container");
   let currentIndex = 0;
 
   function slidesPerView() {
-    if (window.innerWidth >= 600) {
-      return 2;
-    } else {
-      return 1;
-    }
+    return window.innerWidth >= 600 ? 2 : 1;
   }
 
   function updateSlider() {
     const spv = slidesPerView();
-    const maxIndex = slides.length - spv;
+    const maxIndex = Math.ceil(slides.length / spv) - 1;
+
     if (currentIndex < 0) currentIndex = 0;
     if (currentIndex > maxIndex) currentIndex = maxIndex;
-    const shift = (currentIndex * -100) / spv;
-    wrapper.style.transform = `translateX(${shift}%)`;
+
+    // Jedes Mal verschieben wir um genau 1 x Container-Breite:
+    const containerWidth = container.offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * containerWidth}px)`;
+
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex === maxIndex;
   }

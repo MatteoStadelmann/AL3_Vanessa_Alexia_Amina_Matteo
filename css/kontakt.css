@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
@@ -120,5 +119,9 @@ main {
 @media (max-width: 600px) {
   .field-row {
     flex-direction: column;
+  }
+
+  .form-container {
+    margin: 4vh 0px 4vh 0px;
   }
 }

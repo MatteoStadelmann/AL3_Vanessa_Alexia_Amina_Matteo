@@ -1,98 +1,108 @@
+/* css/index.css */
+
 .content-container {
-  width: 90vw;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: left;
-  padding-bottom: 2rem;
-}
-
-.home-title {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  color: var(--color-text-light);
-}
-
-.home-text {
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: var(--color-text-light);
-}
-
-.slider-section {
-  width: 100%;
-  background-color: var(--color-placeholder);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.slider-container {
-  position: relative;
-  width: 90vw;
-  max-width: 1200px;
-  overflow: hidden;
-}
-
-.slider-wrapper {
-  display: flex;
-  gap: 1rem;
-  transition: transform 0.4s ease;
-}
-
-.slide {
-  flex: 0 0 100%;
-  box-sizing: border-box;
-  aspect-ratio: 3 / 2; /* Querformat 3:2 */
-}
-
-.slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-.slider-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  z-index: 10;
-}
-
-.prev-button {
-  left: 0.5rem;
-}
-
-.next-button {
-  right: 0.5rem;
-}
-
-.slider-button:disabled {
-  opacity: 0.3;
-  cursor: default;
-}
-
-@media (min-width: 600px) {
-  .slide {
-    flex: 0 0 calc(50% - 0.5rem);
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 2rem;
   }
-}
-
-@media (min-width: 1024px) {
-  .slide {
-    flex: 0 0 calc(50% - 0.5rem);
+  
+  .home-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--color-text-light);
   }
-}
+  
+  .home-text {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--color-text-light);
+  }
+  
+  /* ---------------- Slider-Teil ---------------- */
+  
+  .slider-section {
+    width: 100%;
+    background-color: var(--color-placeholder);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 90vw;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+  
+  /* Wrapper: alle Slides in einer Reihe */
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  /* Einzelne Slide */
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    aspect-ratio: 3 / 2;
+    padding: 0.25rem;
+  }
+  
+  .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  /* Buttons über den Bildern */
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    color: #fff;
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    z-index: 10;
+  }
+  
+  .prev-button {
+    left: 0.5rem;
+  }
+  
+  .next-button {
+    right: 0.5rem;
+  }
+  
+  .slider-button:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  
+  /* ---------------- Responsive ---------------- */
+  
+  /* Ab 600px: 2 Slides nebeneinander */
+  @media (min-width: 600px) {
+    .slide {
+      flex: 0 0 calc(50%);
+    }
+  }
+  
+  /* Ab 1024px bleibt es bei 2 Slides */
+  @media (min-width: 1024px) {
+    .slide {
+      flex: 0 0 calc(50%);
+    }
+  }
