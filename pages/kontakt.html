@@ -1,0 +1,90 @@
+<!-- pages/kontakt.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxon Motors – Kontakt</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/kontakt.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-text">LUXON MOTORS</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="#" class="active">KONTAKT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="kontakt-form" novalidate>
+        <div class="field-row">
+          <div class="field-group">
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" />
+            <small class="error" id="error-vorname"></small>
+          </div>
+          <div class="field-group">
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" name="nachname" />
+            <small class="error" id="error-nachname"></small>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label for="email">Email Adresse</label>
+            <input type="text" id="email" name="email" />
+            <small class="error" id="error-email"></small>
+          </div>
+          <div class="field-group">
+            <label for="telefon">Telefonnummer</label>
+            <input type="text" id="telefon" name="telefon" />
+            <small class="error" id="error-telefon"></small>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group full-width">
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="nachricht" rows="5" placeholder="Geben Sie hier Ihre Nachricht ein..."></textarea>
+            <small class="error" id="error-nachricht"></small>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button type="submit" id="submit-btn">Nachricht senden</button>
+          <div id="spinner" class="spinner hidden"></div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-hr"></div>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="../index.html">Impressum</a>
+          <a href="../index.html">Datenschutz</a>
+        </div>
+        <span class="footer-copy">&copy; Luxon Motors – All Rights Reserved</span>
+      </div>
+      <div class="footer-extra">
+        <span class="footer-disclaimer">Das ist ein Schulprojekt und keine reale Website</span>
+        <span class="footer-names">Matteo Stadelmann, Vanessa Meier, Amina Abdelhamid, Alexia Correia</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Zuerst databaseClient, dann unser Formular-Skript -->
+  <script src="../javascript/databaseClient.js"></script>
+  <script src="../javascript/kontakt.js"></script>
+</body>
+</html>
